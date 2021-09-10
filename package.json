@@ -1,0 +1,23 @@
+{
+  "name": "learning-platform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server/index.ts -e ts, graphql --exec ts-node",
+    "build": "tsc -b server/",
+    "start": "node server/dist/index.js",
+    "migrate:dev": "prisma migrate dev --name init",
+    "migrate:reset": "prisma migrate reset",
+    "generate": "prisma generate"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^8.2.0",
+    "@prisma/client": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "jsonwebtoken": "^8.5.1",
+    "validatorjs": "^3.22.1"
+  }
+}
