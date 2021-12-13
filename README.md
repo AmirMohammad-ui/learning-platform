@@ -1,3 +1,3 @@
 # learning-platform
 
-__Just tryig out__ and __getting started__ with nuxt 
+__Just trying out__ and __getting started__ with nuxt 
